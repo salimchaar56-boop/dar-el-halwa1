@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>commander_dar_elHalwa</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>dar el_halwa</h1>
+       <figure> 
+            <img src="images/patisserie.png" alt="Vitrine garnie de mignardises, cornes de gazelle et makrouds"> 
+            <figcaption>note vitrine de mignardises traditionnelles</figcaption>
+        </figure>
+    </header>
+    <nav id="nav">
+      <ul>
+        <li><a href="#apropos">A propos</a></li>
+        <li><a href="#np">produits </a></li>
+        <li><a href="#ns">Nos services</a></li>
+
+
+        <li><a href="#co">Contact</a></li>  
+    </ul>
+</nav>
+<main>
+   <h2>commander un gateaux personalise</h2>
+   <form action="traitemant.php" method="post" >
+    <fieldset>
+        <legend>vos cordonnes</legend>
+        <label for="">nom</label><input type="text" required minlength="2" name="nom"> <br>
+        <label for="">prenom</label><input type="text"required minlength="2"name="prenom"> <br>
+        <label for="">adress electronique</label><input type="email" name="mail" placeholder="vous@exemple.tn" required> <br>
+        <label for="">telephone</label><input type="tel" id="telephone" pattern="\+216 [2459][0-9]{7}" required name="tel"> <br>
+        <label for="">code postal</label><input type="number" required name="postal" pattern="[0-9]{4}"> <br>
+        <label for="">adrees  de levrison</label><textarea name="al" id="al" rows="3" cols="40" required></textarea> <br>
+        <label for="">gouvernort</label><select name="s1" id="s1">
+            <option value="sfax">sfax</option>
+            <option value="tunis">tunis</option>
+            <option value="sousse">sousse</option>
+            <option value="gabes">gabes</option>
+        </select> <br>
+    </fieldset>
+    <fieldset>
+        <legend>votre gateaux</legend>
+        <fieldset>
+       <legend>occation</legend>anniversaire mariage<input type="radio" name="occation" id="occ-anniv" required value="anniversaire">fiancailles<input type="radio" id=""occ-finace name="occation">autre<input type="radio" id="occ-autre" name="occation"> </fieldset> <br>
+        <label for="">date de retrait</label><input type="date"  id="date" name="date" min="2026-09-01"required> <br>
+        <label for="">nombre de part </label><input type="nombre" min="6" max="100" step="2" value="12"> <br>
+         <fieldset><legend>parfumes souhaites</legend>chocolat<input type="checkbox" name="parfumes">vanille<input type="checkbox" name="parfumes">pistache<input type="checkbox" name="parfumes">fruits<input type="checkbox" name="parfumes">rouges<input type="checkbox" name="parfumes"> </fieldset><br>
+        <label for="">niveau de sucre</label><input type="range" id="sucre" name="sucre" min="0" max="10" value="5" step="1"> <br>
+        <label for="">couleur de galcage</label><input type="color" id=" galcage" name=" galcage" value="#c8912a"> <br>
+        <label for="">messagez sur le gateaux</label><input type="text" maxlength="30"> <br>
+            <label for="">photo de modele </label><input type="file" id="photo" name="photo" accept="images" > <br>
+             <label for=""> decors(plusieurs choix possible)</label><select name="decors"  multiple size="4" id="decors" >
+                <option value="fleurs">fleurs en pate a source</option>
+                <option value="friuts">friuts frais</option>
+            </select>
+            <label for="">presion</label><textarea name="pre" id="pre" rows="4" cols="40" required></textarea> <br>
+            
+    </fieldset>
+    <fieldset>
+        <legend>confirmation</legend>
+        <input type="checkbox" id="confirme" name="confirmee"  value="oui" required>
+        <label for="">je confirme que les information saisis sont exactes</label>
+    </fieldset>
+
+      <p>
+        <button type="submit">envoyer ma commende</button>
+        <button type="reset">tout effacer</button>
+      </p>
+   </form>
+    
+</main>
+<footer>
+  dar el_halwa _2026_
+   <h1>suiver_nous</h1>
+  <ul>
+    <li><a href="https://www.facebook.com/darelhalwa">https://www.facebook.com/darelhalwa </a></li>
+    <li><a href="https://www.instagram.com/darelhalwa">https://www.instagram.com/darelhalwa</a></li>
+    <li><a href="https://www.linkedin.com/company/darelhalwa">https://www.linkedin.com/company/darelhalwa</a></li>
+  </ul>
+
+</footer>
+</body>
+</html>
